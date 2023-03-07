@@ -1,0 +1,66 @@
+.rm-list-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.rm-item {
+    transition: transform 0.3s ease-in-out;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 20px;
+    padding: 10px;
+    width: 70%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.rm-item.removing {
+    transform: translateX(-100%);
+}
+
+.rm-thumbnail-container {
+    width: 200px;
+    height: 112.5px;
+    margin-right: 20px;
+}
+
+.rm-thumbnail-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.rm-details-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.rm-title {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.rm-author {
+    font-style: italic;
+}
+
+.delete-button {
+    background-color: #ff7f50;
+    border: none;
+    color: white;
+    padding: 8px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: auto;
+}
+
+.delete-button:hover {
+    background-color: #e60000;
+}
