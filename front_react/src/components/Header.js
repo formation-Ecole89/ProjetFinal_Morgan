@@ -75,13 +75,15 @@ export default function Header() {
                         </li>
                     </ul>
                     <form className="d-flex" role="search">
-                        <button className="btn btn-outline-success" type="submit" disabled>
-                            {login ? (
+                        {login ? (
+                            <button className="btn btn-outline-success" type="submit" disabled>
                                 <a className="nav-link" href="/">Bonjour {login} !</a>
-                            ) : (
+                            </button>
+                        ) : (
+                            <button className="btn btn-outline-warning" type="submit" disabled>
                                 <a className="nav-link" href="/">Non Connecté</a>
-                            )}
-                        </button>
+                            </button>
+                        )}
                     </form>
                 </div>
             </div>
